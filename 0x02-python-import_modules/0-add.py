@@ -3,7 +3,12 @@
 import add_0
 
 
-a = 1
-b = 2
-result = '{} + {} = {}'
-print(result.format(a, b, add_0.add(a, b)))
+def addition():
+    a = 1
+    b = 2
+    result = '{:d} + {:d} = {:d}'
+    print(result.format(a, b, add_0.add(a, b)))
+
+
+if __name__ == '__main__':
+    addition()

@@ -11,9 +11,11 @@ def my_calculator():
     b = int(arguments[3])
     operators = ['+', '-', '*', '/']
     if lenght != 3:
-        sys.exit('Usage: ./100-my_calculator.py <a> <operator> <b>')
+        print('Usage: ./100-my_calculator.py <a> <operator> <b>')
+        sys.exit(1)
     elif arguments[2] not in operators:
-        sys.exit('Unknown operator. Available operators: +, -, * and /')
+        print('Unknown operator. Available operators: +, -, * and /')
+        sys.exit(1)
     elif lenght == 3:
         if arguments[2] == '+':
             print('{0:d} + {1:d} = {2:d}'.format(a, b, add(a, b)))
@@ -22,7 +24,7 @@ def my_calculator():
         elif arguments[2] == "*":
             print('{0:d} * {1:d} = {2:d}'.format(a, b, mul(a, b)))
         elif arguments[2] == '/':
-            print('{0:d} / {1:d} = {2:.2f}'.format(a, b, div(a, b)))
+            print('{0:d} / {1:d} = {2:d}'.format(a, b, div(a, b)))
         else:
             pass
 

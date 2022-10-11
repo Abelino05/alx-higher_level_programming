@@ -33,6 +33,6 @@ class Square:
         """Prints in stdout the square"""
         for i in range(self.__size):
             if self.__size == 0:
-                print(' ')
+                print(' ', end='\n')
             else:
                 print('#'*self.__size)

@@ -3,6 +3,7 @@
 Verifie the instance of an object
 """
 
+
 def is_same_class(obj, a_class):
     """
     Verify if the object is an instance of the specified class

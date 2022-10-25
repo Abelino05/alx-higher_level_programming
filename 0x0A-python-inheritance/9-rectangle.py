@@ -8,13 +8,13 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """ 
+    """
     definition of a Rectangle
     Methods:
         area: defines the area
         __str__: string representation
     """
-    
+
     def __init__(self, width, height):
         """
         constructor and width, height
